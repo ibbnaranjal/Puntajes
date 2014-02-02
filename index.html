@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Puntajes</title>
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.0.css" />
+	<link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+	<!-- ======================= AGREGAR JUEGOS ======================= -->
+	<div data-role="page" id="principal">
+		<header data-role="header" data-theme="b">
+			<h1 class="ui-title titulo">PUNTAJES</h1>
+			<div class="ui-bar ui-bar-a">
+				<div class="left">
+					<input type="text" id="newGame" data-theme="a" placeholder="Nombre del Juego" />	
+				</div>
+				<div class="right">
+					<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-icon-plus btnAddJuego">Añadir</button>
+				</div>
+			</div>
+		</header>
+		<div data-role="content">
+			<ul data-role="listview" class="listaJuegos">
+				<!--<li><a href="#juego">Juego Número Uno</a></li>
+				<li><a href="#juego">Juego Número Dos</a></li>
+				<li><a href="#juego">Juego Número Tres</a></li>
+				<li><a href="#juego">Juego Número Cuatro</a></li>-->
+			</ul>
+		</div>
+		<footer data-role="footer" data-position="fixed">
+			<a href="#resultados" class="ui-btn ui-corner-all ui-btn-b btnResultado">Resultados</a>
+		</footer>
+	</div>
+	
+	<!-- =============== AGREGAR PARTICIPANTES A JUEGO =============== -->
+	<div data-role="page" id="juego">
+		<header data-role="header" data-theme="b">
+			<a data-rel="back" class="ui-btn ui-btn-left ui-btn-icon-left ui-icon-back">Atrás</a>
+			<h1 class="ui-title">Nombre de Juego</h1>
+			<a class="ui-btn reiniciarJuego">Reiniciar</a>
+			<div class="ui-bar ui-bar-a">
+				<div class="left">
+					<input type="text" id="newPlayer" data-theme="a" placeholder="Nombre del Participante"/>
+				</div>
+				<div class="right">
+					<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-notext ui-icon-plus btnAddParticipante">Añadir</button>
+				</div>
+			</div>
+		</header>
+		<div data-role="content" class="listaParticipantes" idJuego="">
+			<!--<div class="ui-body ui-body-a participante">
+				<div class="imagen">
+					<figure><img src="http://free.bebasmilih.com/wp-content/uploads/2013/03/smile.png" alt=""></figure>
+					<div class="controlPuntos">
+						<div>Up</div>
+						<div>Down</div>
+					</div>
+				</div>
+				<div class="nombre">
+					<h6>Anacleto Pancracio D.</h6>
+					<div>+10</div>
+				</div>
+			</div>
+			<div class="ui-body ui-body-a participante">
+				<div class="imagen">
+					<figure><img src="http://free.bebasmilih.com/wp-content/uploads/2013/03/smile.png" alt=""></figure>
+					<div class="controlPuntos">
+						<div>Up</div>
+						<div>Down</div>
+					</div>
+				</div>
+				<div class="nombre">
+					<h6>Anacleto Pancracio D.</h6>
+					<div>+10</div>
+				</div>
+			</div>
+			<div class="ui-body ui-body-a participante">
+				<div class="imagen">
+					<figure><img src="http://free.bebasmilih.com/wp-content/uploads/2013/03/smile.png" alt=""></figure>
+					<div class="controlPuntos">
+						<div>Up</div>
+						<div>Down</div>
+					</div>
+				</div>
+				<div class="nombre">
+					<h6>Anacleto Pancracio D.</h6>
+					<div>+10</div>
+				</div>
+			</div>
+			<div class="ui-body ui-body-a participante">
+				<div class="imagen">
+					<figure><img src="http://free.bebasmilih.com/wp-content/uploads/2013/03/smile.png" alt=""></figure>
+					<div class="controlPuntos">
+						<div>Up</div>
+						<div>Down</div>
+					</div>
+				</div>
+				<div class="nombre">
+					<h6>Anacleto Pancracio D.</h6>
+					<div>+10</div>
+				</div>
+			</div>-->
+		</div>
+		<footer data-role="footer" data-position="fixed">
+			<a href="#resultados" class="ui-btn ui-corner-all ui-btn-b btnResultado">Resultados</a>
+		</footer>
+	</div>
+
+	<!-- ========================= RESULTADOS ========================= -->
+	<div data-role="page" id="resultados">
+		<header data-role="header" data-theme="b">
+			<a data-rel="back" class="ui-btn ui-btn-left ui-btn-icon-left ui-icon-back">Atrás</a>
+			<h1 class="ui-title">Resultados</h1>
+		</header>
+		<div data-role="content" class="contenidoGanadores">
+			<!--<div class="ganadores">
+				<div class="ui-bar ui-bar-a">
+					<h3>Nombre de Juego Uno</h3>
+				</div>
+				<div class="ui-body ui-body-a ganador">
+					<p>Nombre de Participante</p>
+					<figure><img src="https://cdn4.iconfinder.com/data/icons/armcode-mobile/512/OK_smile-128.png" alt=""></figure>
+				</div>
+			</div>
+			<div class="ganadores">
+				<div class="ui-bar ui-bar-a">
+					<h3>Nombre de Juego Dos</h3>
+				</div>
+				<div class="ui-body ui-body-a ganador">
+					<p>Nombre de Participante</p>
+					<figure><img src="https://cdn4.iconfinder.com/data/icons/armcode-mobile/512/OK_smile-128.png" alt=""></figure>
+				</div>
+			</div>
+			<div class="ganadores">
+				<div class="ui-bar ui-bar-a">
+					<h3>Nombre de Juego Tres</h3>
+				</div>
+				<div class="ui-body ui-body-a ganador">
+					<p>Nombre de Participante</p>
+					<figure><img src="https://cdn4.iconfinder.com/data/icons/armcode-mobile/512/OK_smile-128.png" alt=""></figure>
+				</div>
+			</div>
+			<div class="ganadores">
+				<div class="ui-bar ui-bar-a">
+					<h3>Nombre de Juego Cuatro</h3>
+				</div>
+				<div class="ui-body ui-body-a ganador">
+					<p>Nombre de Participante</p>
+					<figure><img src="https://cdn4.iconfinder.com/data/icons/armcode-mobile/512/OK_smile-128.png" alt=""></figure>
+				</div>
+			</div>-->
+
+		</div>
+		<footer data-role="footer" data-position="fixed">
+			<h4><a href="http://www.ibbnaranjal.com">ibbnaranjal</a></h4>
+		</footer>
+	</div>
+
+	<script src="js/jquery-1.10.2.js"></script>
+	<script src="js/jquery.mobile-1.4.0.js"></script>
+	<script src="js/Participante.js"></script>
+	<script src="js/Juego.js"></script>
+	<script src="js/Puntajes.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

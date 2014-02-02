@@ -1,0 +1,166 @@
+.left
+{
+	float: left;
+	width: 88%;
+	margin-right: 2%;
+}
+
+.right
+{
+	float: right;
+	width: 8%;
+	margin-left: 2%
+}
+
+.right button
+{
+	margin-top: 11px;
+}
+
+.btnResultado
+{
+	left: 50%;
+	margin-left: -55px;
+	width: 110px;
+}
+
+.participante
+{
+	margin-bottom: 5px;
+}
+
+.participante .imagen
+{
+	float: left;
+}
+
+.participante .imagen figure
+{
+	/*border: 1px solid;*/
+	height: 90px;
+	padding: 0;
+	margin: 5px 0;
+	width: 90px;
+}
+
+.participante .imagen figure img
+{
+	margin: 0;
+	padding: 0;
+	border-radius: 100%;
+	width: 85px;
+}
+
+
+/*.participante .controlPuntos
+{
+}*/
+
+.participante .controlPuntos div
+{
+	/*background: #ccc;*/
+	/*border: 1px solid #ccc;*/
+	/*border-radius: 10px;*/
+	height: 24px;
+	font-size: 14px;
+	text-align: center;
+}
+
+.participante .controlPuntos div:nth-child(1)
+{
+	/*background: #bcc;*/
+	/*border-top-left-radius: 15px;*/
+	/*border-top-right-radius: 15px;*/
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid #2f2f2f;
+	cursor: pointer;
+	/*font-size: 0;*/
+	float: left;
+	/*width: 42px;*/
+	width: 0;
+	height: 0;
+	/*line-height: 0;*/
+}
+
+.participante .controlPuntos div:nth-child(2)
+{
+	/*background: #ccc;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;*/
+	cursor: pointer;
+	float: right;
+	/*width: 42px;*/
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #2f2f2f;
+	/*font-size: 0;
+	line-height: 0;*/
+}
+
+.participante .nombre
+{
+	float: left;
+	font-size: 24px;
+	height: 126px;
+	/*line-height: 126px;*/
+	margin-left: 25px;
+	width: 70%;
+}
+
+.participante .nombre h6
+{
+	float: left;
+	letter-spacing: 1px;
+	line-height: 126px;
+	margin: 0;
+	padding: 0;
+}
+
+.participante .nombre div
+{
+	border: 1px dotted;
+	border-radius: 100%;
+	float: right;
+	font-size: 28px;
+	line-height: 124px;
+	margin: 0;
+	/*padding: 0 20px;*/
+	padding: 0;
+	text-align: center;
+	width: 100px;
+}
+
+
+.ganadores
+{
+	margin-bottom: 10px;
+}
+
+.ganador p
+{
+	display: inline-block;
+	float: left;
+}
+
+.ganador figure
+{
+	display: inline-block;
+	float: right;
+	margin: 8px 0 0 0;
+	padding: 0;
+}
+.ganador figure img
+{
+	width: 32px;
+}
+
+@media (min-width: 720px) {
+	.participante .nombre
+	{
+		width: 80%;
+		font-size: 34px;
+	}
+}
